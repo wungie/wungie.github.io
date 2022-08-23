@@ -142,6 +142,20 @@ a {
     z-index: -1;
 }
 
+@media(max-width:850px) {
+  .about h2 {
+    font-size: 260%;
+  }
+  .about p {
+    font-size: 90%;
+  }
+  .contact h2 {
+    font-size: 220%;
+  }
+  .contact div ul li a {
+    font-size: 80%;
+  }
+}
 @media(max-width: 768px) {
   .burger {
     display: block;
