@@ -82,7 +82,7 @@ a {
   background-color: #262626;
   padding-left: 90px;
   padding-right: 90px;
-  padding-bottom: 30px
+  padding-bottom: 30px;
 }
 .about h2 {
   font-family: 'Sairia', sans-serif;
@@ -133,6 +133,22 @@ a {
   font-size: 1.3rem;
   margin-top: 30px
 }
+.board {
+  justify-content: left;
+}
+.hobbies {
+  display: flex;
+  justify-content: center;
+}
+.hobb {
+  padding: 20px;
+}
+.hobb p {
+  text-align: left;
+}
+.hobb .bike {
+  height: 300px
+}
 .fpage .video-backround .vid {
     position: fixed;
     right: 0;
@@ -141,7 +157,26 @@ a {
     min-height: 100%;
     z-index: -1;
 }
-
+.video-backround {
+  width: 100%;
+  height: 0px;
+  position: absolute;
+}
+@media(max-width:1000px) {
+  .hobb img {
+    height: 250px;
+  }
+  .hobb h1 {
+    font-size: 1.2rem;
+    display: inline;
+  }
+  .hobb p {
+    font-size: 1.2rem;
+  }
+  .hobb .bike {
+    height: 250px;
+  }
+}
 @media(max-width:850px) {
   .about h2 {
     font-size: 260%;
@@ -155,7 +190,9 @@ a {
   .contact div ul li a {
     font-size: 80%;
   }
+  .hobb img {height: 200px;}
 }
+
 @media(max-width: 768px) {
   .burger {
     display: block;
@@ -188,5 +225,11 @@ a {
   }
   .n-item.active {
     left: 0;
+  }
+  .hobb img {
+    height: 160px;
+  }
+  .hobb .bike {
+    height: 160px;
   }
 }
